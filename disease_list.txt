@@ -1,0 +1,36 @@
+Acute Sinusitis - 0 1 0 0 1 0 1 0 0 1
+Appendicitis - 1 0 0 0 0 1 0 0 1 0
+Bacterial/Viral Pneumonia - 0 1 0 0 1 1 0 0 1 0
+Benign Paroxysmal Positional Vertigo (BPPV) - 0 0 0 1 0 0 0 0 1 0
+Bronchitis - 0 1 0 0 1 1 0 0 0 1
+Carbon Monoxide Poisoning - 0 0 0 1 0 0 1 0 1 0
+Carpal Tunnel Syndrome or Heat Cramps - 0 0 0 0 0 0 0 1 0 0
+Celiac Disease - 1 0 1 0 1 0 1 0 0 0
+Chronic Fatigue Syndrome - 0 0 0 0 1 0 1 0 0 1
+Chronic Sinusitis - 0 1 0 0 0 0 1 0 0 1
+Clinical Depression - 0 0 0 0 1 0 0 0 0 0
+Common Cold - 0 1 0 0 0 1 0 0 0 1
+Drug Allergy - 0 1 0 0 1 0 0 0 1 0
+Food Poisoning - 0 0 1 0 0 1 0 0 0 0
+H1N1 Flu Virus (Swine Flu) - 0 1 1 0 1 1 1 0 1 1
+Hand Foot and Mouth Disease - 0 0 0 0 0 1 0 0 0 1
+Heartburn/GERD - 0 1 0 0 0 0 0 0 1 0
+High Blood Pressure or Cluster Headache - 0 0 0 0 0 0 1 0 0 0
+Hypothyroidism - 0 0 0 0 1 0 0 0 1 0
+Influenza (flu) - 0 1 1 0 0 1 1 0 0 1
+Intracranial Hematoma - 0 0 0 1 0 0 1 0 0 0
+Iron Deficiency Anemia - 0 0 0 1 1 0 1 0 0 0
+Irritable Bowel Syndrome - 1 0 1 0 1 0 0 0 0 0
+Labyrinthitis - 0 0 0 1 0 0 0 0 0 0
+Lactose Intolerance - 1 0 1 0 0 0 0 0 1 0
+Meningitis - 0 0 0 0 1 1 1 0 1 0
+Mononucleosis - 0 0 0 0 1 1 1 0 0 1
+Mycoplasma Pneumonia or Tonsillitis - 0 1 0 0 0 0 0 0 0 1
+Peritonsillar Abscess - 0 0 0 0 0 1 1 0 0 1
+Pneumococcal Infections - 0 0 0 0 0 1 1 0 0 0
+Respiratory Syncytial Virus - 0 1 0 0 0 1 1 0 0 1
+Salmonella - 0 0 1 0 0 1 1 0 1 0
+Scarlet Fever or Strep - 0 0 0 0 0 1 1 0 1 1
+Sleep Apnea - 0 0 0 0 1 0 1 0 0 0
+Ulcerative Colitis - 0 0 1 0 1 1 0 0 0 0
+Viral Gastroenteritis - 0 1 0 0 1 0 0 1 0 0
