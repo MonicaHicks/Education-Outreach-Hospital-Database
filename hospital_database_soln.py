@@ -10,10 +10,10 @@ MENU = "Add, Lookup, or Delete a patient? (type 'q' to quit): "
 
 def add_patient(hospital_database):
    # // add someone
-   name = input("Full name of patient:\n")
-   age = input("Age:\n")
-   sex = input("Sex:\n")
-   dob = input("Date of birth: (MM/DD/YYYY):\n")
+   name = input("Full name of patient: ")
+   age = input("Age: ")
+   sex = input("Sex: ")
+   dob = input("Date of birth: (MM/DD/YYYY): ")
    disease = diagnose()
    patient_profile = [age, sex, dob, disease]
    hospital_database[name] = patient_profile
@@ -48,7 +48,7 @@ def diagnose():
                 "Nausea", "Throat Irritation"]
     medical_profile = []
 
-    print("Begin confirming the patient's symptoms:")
+    print("Begin c nfirming the patient's symptoms (1 for yes, 0 for no):")
     for i in range(len(symptoms)):
         print("Symptom " + str(i + 1) + ": " + symptoms[i])
         medical_profile.append(input("Experiencing symptom " + str(i + 1) + "? "))
