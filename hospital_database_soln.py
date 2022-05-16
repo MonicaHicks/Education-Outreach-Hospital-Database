@@ -37,9 +37,14 @@ def lookup_patient(hospital_database):
     else:
         print("This patient doesn't exist")
 
-def delete_patient():
+def delete_patient(hospital_database):
     #   //remove patient
-    pass
+    patient = input("Name of the person you'd like to delete? ")
+    if patient in hospital_database.keys():
+        del hospital_database[patient]
+        print(patient + " has been removed from the hospital database")
+    else:
+        print(patient + " is not in the hospital database")
 
 
 def diagnose():
@@ -113,13 +118,15 @@ def main():
     print(WELCOME)
     while True:
         print(DASHES)
-        control = input(MENU)
-        if control == "q":
-            break
-        elif control == "Lookup":
-            lookup_patient(hospital_databse)
-        elif control == "Add":
+        control = input(MENU).upper()
+        if control == "Q":
+            return
+        elif control == "LOOKUP":
+            lookup_patient(hospital_database)
+        elif control == "ADD":
             add_patient(hospital_database)
+        elif control == "DELETE":
+            delete_patient(hospital_database)
 
 #//    while(True):
  # //      print(DASHES)
