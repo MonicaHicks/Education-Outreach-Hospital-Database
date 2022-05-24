@@ -8,17 +8,36 @@ DASHES = "--------------------------------------------"
 WELCOME = "Welcome to the Hospital Database!"
 MENU = "Add, Lookup, or Delete a patient? (type 'q' to quit): "
 
+# This function will add a patient
 def add_patient(hospital_database):
-   # // add someone
+
+    # Obtain info on patient
    name = input("Full name of patient: ")
    age = input("Age: ")
    sex = input("Sex: ")
    dob = input("Date of birth: (MM/DD/YYYY): ")
+
+   # The diagnose function will return a disease diagnosis
+   # based on reported symptoms.
+   # To ignore, comment out this line and uncomment line 25
    disease = diagnose()
+
+   # disease = "None"
+
+   # Put all patient info in to a list. This list will be 
+   # accessed using constants AGE(0), SEX(1), DOB(2), 
+   # and DISEASE(3). For that reason, order matters.
    patient_profile = [age, sex, dob, disease]
+
+   # The hospital database is a dictionary where the 
+   # patient's name is the key and the value is the list 
+   # associated with their patient profile
    hospital_database[name] = patient_profile
 
+   # Print success message
    print("\n" + name + " has been added to the database!")
+
+   # Print list of all patients currently in the database
    print("Current patients on file:")
    for patient in hospital_database.keys():
        print(patient)
@@ -53,7 +72,7 @@ def diagnose():
                 "Nausea", "Throat Irritation"]
     medical_profile = []
 
-    print("Begin c nfirming the patient's symptoms (1 for yes, 0 for no):")
+    print("Begin confirming the patient's symptoms (1 for yes, 0 for no):")
     for i in range(len(symptoms)):
         print("Symptom " + str(i + 1) + ": " + symptoms[i])
         medical_profile.append(input("Experiencing symptom " + str(i + 1) + "? "))
@@ -127,9 +146,5 @@ def main():
             add_patient(hospital_database)
         elif control == "DELETE":
             delete_patient(hospital_database)
-
-#//    while(True):
- # //      print(DASHES)
-  #  //    print(MENU)
 
 main()
