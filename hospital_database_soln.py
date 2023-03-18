@@ -44,6 +44,9 @@ def add_patient(hospital_database):
    print("\n")
 
 
+# This code will take in the name of a patients and if
+# found, print their name, age, sex, DOB, diagnosis
+# Otherwise, it will print a not found message
 def lookup_patient(hospital_database):
     patient = input("Name of the person you'd like to look up?\n")
     if patient in hospital_database.keys():
@@ -56,6 +59,8 @@ def lookup_patient(hospital_database):
     else:
         print("This patient doesn't exist")
 
+# This code removes a patient from the hospital database
+# or prints an error message if not found
 def delete_patient(hospital_database):
     #   //remove patient
     patient = input("Name of the person you'd like to delete? ")
